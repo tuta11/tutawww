@@ -1,7 +1,25 @@
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <h1>Puslapis</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <title>Duomenu surinkimass</title>
+</head>
+<body>
+    <h1>Informacijos įvedimo forma</h1>
+    <form action="submit.php" method="POST">
+        <label for="date">Data:</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="name">Vardas:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="job">Darbas:</label>
+        <input type="text" id="job" name="job" required><br><br>
+
+        <label for="comment">Komentaras:</label>
+        <textarea id="comment" name="comment" required></textarea><br><br>
+
+        <button type="submit">Siųsti</button>
+    </form>
+</body>
+</html>
